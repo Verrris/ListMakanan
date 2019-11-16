@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMakanan">
+    <ImageView
+        android:id="@+id/image_detail"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:text="@string/nama_makanan"
+        android:layout_toRightOf="@id/image_detail"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/description"
+        android:textStyle="bold"
+        android:layout_below="@+id/image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/lorem"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp" />
+</RelativeLayout>
